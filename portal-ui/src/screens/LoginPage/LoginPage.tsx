@@ -547,7 +547,7 @@ const Login = ({
   const consoleText =
     loginStrategy.loginStrategy === loginStrategyType.serviceAccount
       ? "Operator"
-      : "Beryll Storage";
+      : "Beryl Storage";
 
   return (
     <React.Fragment>
