@@ -187,65 +187,65 @@ const Menu = ({
       name: "IAM Policies",
       icon: IAMPoliciesIcon,
     },
-    {
-      group: "common",
-      type: "item",
-      component: NavLink,
-      to: IAM_PAGES.SETTINGS,
-      name: "Settings",
-      icon: SettingsIcon,
-    },
-    {
-      group: "common",
-      type: "item",
-      component: NavLink,
-      to: IAM_PAGES.NOTIFICATIONS_ENDPOINTS,
-      name: "Notification Endpoints",
-      icon: LambdaIcon,
-    },
-    {
-      group: "common",
-      type: "item",
-      component: NavLink,
-      to: IAM_PAGES.TIERS,
-      name: "Tiers",
-      icon: TiersIcon,
-    },
-    {
-      group: "common",
-      type: "item",
-      component: NavLink,
-      to: IAM_PAGES.TOOLS,
-      name: "Tools",
-      icon: ToolsIcon,
-    },
-    {
-      group: "License",
-      type: "item",
-      component: NavLink,
-      to: IAM_PAGES.LICENSE,
-      name: "License",
-      icon: LicenseIcon,
-      forceDisplay: true,
-    },
-    {
-      group: "License",
-      type: "item",
-      component: NavLink,
-      to: IAM_PAGES.DOCUMENTATION,
-      name: "Documentation",
-      icon: DocumentationIcon,
-      forceDisplay: true,
-      onClick: (
-        e:
-          | React.MouseEvent<HTMLLIElement>
-          | React.MouseEvent<HTMLAnchorElement>
-          | React.MouseEvent<HTMLDivElement>
-      ) => {
-        e.preventDefault();
-        window.open("https://docs.min.io/?ref=con", "_blank");
-      },
-    },
+    // {
+    //   group: "common",
+    //   type: "item",
+    //   component: NavLink,
+    //   to: IAM_PAGES.SETTINGS,
+    //   name: "Settings",
+    //   icon: SettingsIcon,
+    // },
+    // {
+    //   group: "common",
+    //   type: "item",
+    //   component: NavLink,
+    //   to: IAM_PAGES.NOTIFICATIONS_ENDPOINTS,
+    //   name: "Notification Endpoints",
+    //   icon: LambdaIcon,
+    // },
+    // {
+    //   group: "common",
+    //   type: "item",
+    //   component: NavLink,
+    //   to: IAM_PAGES.TIERS,
+    //   name: "Tiers",
+    //   icon: TiersIcon,
+    // },
+    // {
+    //   group: "common",
+    //   type: "item",
+    //   component: NavLink,
+    //   to: IAM_PAGES.TOOLS,
+    //   name: "Tools",
+    //   icon: ToolsIcon,
+    // },
+    // {
+    //   group: "License",
+    //   type: "item",
+    //   component: NavLink,
+    //   to: IAM_PAGES.LICENSE,
+    //   name: "License",
+    //   icon: LicenseIcon,
+    //   forceDisplay: true,
+    // },
+    // {
+    //   group: "License",
+    //   type: "item",
+    //   component: NavLink,
+    //   to: IAM_PAGES.DOCUMENTATION,
+    //   name: "Documentation",
+    //   icon: DocumentationIcon,
+    //   forceDisplay: true,
+    //   onClick: (
+    //     e:
+    //       | React.MouseEvent<HTMLLIElement>
+    //       | React.MouseEvent<HTMLAnchorElement>
+    //       | React.MouseEvent<HTMLDivElement>
+    //   ) => {
+    //     e.preventDefault();
+    //     window.open("https://docs.min.io/?ref=con", "_blank");
+    //   },
+    // },
   ];
 
   let menuOperatorConsole: IMenuItem[] = [

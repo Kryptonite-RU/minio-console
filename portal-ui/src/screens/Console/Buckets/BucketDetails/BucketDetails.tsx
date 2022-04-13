@@ -363,10 +363,11 @@ const BucketDetails = ({
                 label: "Events",
                 value: "events",
                 component: Link,
-                disabled: !hasPermission(bucketName, [
-                  IAM_SCOPES.S3_GET_BUCKET_NOTIFICATIONS,
-                  IAM_SCOPES.S3_PUT_BUCKET_NOTIFICATIONS,
-                ]),
+                // disabled: !hasPermission(bucketName, [
+                //   IAM_SCOPES.S3_GET_BUCKET_NOTIFICATIONS,
+                //   IAM_SCOPES.S3_PUT_BUCKET_NOTIFICATIONS,
+                // ]),
+                disabled: true,
                 to: getRoutePath("events"),
               },
             }}
@@ -375,12 +376,13 @@ const BucketDetails = ({
                 label: "Replication",
                 value: "replication",
                 component: Link,
-                disabled:
-                  !distributedSetup ||
-                  !hasPermission(bucketName, [
-                    IAM_SCOPES.S3_GET_REPLICATION_CONFIGURATION,
-                    IAM_SCOPES.S3_PUT_REPLICATION_CONFIGURATION,
-                  ]),
+                // disabled:
+                //   !distributedSetup ||
+                //   !hasPermission(bucketName, [
+                //     IAM_SCOPES.S3_GET_REPLICATION_CONFIGURATION,
+                //     IAM_SCOPES.S3_PUT_REPLICATION_CONFIGURATION,
+                //   ]),
+                disabled: true,
                 to: getRoutePath("replication"),
               },
             }}
@@ -389,12 +391,13 @@ const BucketDetails = ({
                 label: "Lifecycle",
                 value: "lifecycle",
                 component: Link,
-                disabled:
-                  !distributedSetup ||
-                  !hasPermission(bucketName, [
-                    IAM_SCOPES.S3_GET_LIFECYCLE_CONFIGURATION,
-                    IAM_SCOPES.S3_PUT_LIFECYCLE_CONFIGURATION,
-                  ]),
+                // disabled:
+                //   !distributedSetup ||
+                //   !hasPermission(bucketName, [
+                //     IAM_SCOPES.S3_GET_LIFECYCLE_CONFIGURATION,
+                //     IAM_SCOPES.S3_PUT_LIFECYCLE_CONFIGURATION,
+                //   ]),
+                disabled: true,
                 to: getRoutePath("lifecycle"),
               },
             }}

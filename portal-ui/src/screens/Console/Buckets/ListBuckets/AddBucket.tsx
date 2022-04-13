@@ -298,7 +298,7 @@ const AddBucket = ({
                     value={bucketName}
                   />
                 </Grid>
-                <Grid item xs={12}>
+                {/* <Grid item xs={12}>
                   <div className={classes.h6title}>Features</div>
                   <br />
                   {!distributedSetup && (
@@ -497,7 +497,7 @@ const AddBucket = ({
                       />
                     </Grid>
                   </React.Fragment>
-                )}
+                )} */}
               </Grid>
               <Grid item xs={12} className={classes.buttonContainer}>
                 <Button

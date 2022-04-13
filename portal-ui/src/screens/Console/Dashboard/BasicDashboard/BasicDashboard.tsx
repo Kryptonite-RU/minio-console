@@ -256,7 +256,7 @@ const BasicDashboard = ({ classes, usage }: IDashboardProps) => {
           </TabPanel>
         </Grid>
       </Grid>
-      {!usage?.prometheusNotReady && (
+      {/* {!usage?.prometheusNotReady && (
         <Grid
           container
           justifyContent={"center"}
@@ -296,7 +296,7 @@ const BasicDashboard = ({ classes, usage }: IDashboardProps) => {
             />
           </Grid>
         </Grid>
-      )}
+      )} */}
     </Fragment>
   );
 };

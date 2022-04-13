@@ -134,6 +134,7 @@ const styles = (theme: Theme) =>
           marginBottom: 10,
         },
         "& .text-line1": {
+          fontSize: 100,
           font: " 100 70px 'Lato'",
 
           "@media (max-width: 600px)": {
@@ -557,11 +558,11 @@ const Login = ({
           <Grid container className={classes.loginContainer}>
             <Grid item className="consoleTextBanner">
               <div className="left-items">
-                <div className="left-logo">
+                {/* <div className="left-logo">
                   <LoginMinIOLogo />
-                </div>
-                <div className="text-line1">Welcome to</div>
-                <div className="text-line2">{consoleText}</div>
+                </div> */}
+                <div className="text-line1">Object Storage</div>
+                {/* <div className="text-line2">{consoleText}</div> */}
               </div>
             </Grid>
             <Grid item className="right-items">

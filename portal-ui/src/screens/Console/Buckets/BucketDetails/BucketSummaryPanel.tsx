@@ -448,7 +448,7 @@ const BucketSummary = ({
               />
             </SecureComponent>
 
-            <SecureComponent
+            {/* <SecureComponent
               scopes={[IAM_SCOPES.S3_GET_BUCKET_ENCRYPTION_CONFIGURATION]}
               resource={bucketName}
             >
@@ -462,9 +462,9 @@ const BucketSummary = ({
                 }}
                 isLoading={loadingEncryption}
               />
-            </SecureComponent>
+            </SecureComponent> */}
 
-            <SecureComponent
+            {/* <SecureComponent
               scopes={[IAM_SCOPES.S3_GET_REPLICATION_CONFIGURATION]}
               resource={bucketName}
             >
@@ -481,9 +481,9 @@ const BucketSummary = ({
                   />
                 }
               />
-            </SecureComponent>
+            </SecureComponent> */}
 
-            <SecureComponent
+            {/* <SecureComponent
               scopes={[IAM_SCOPES.S3_GET_BUCKET_OBJECT_LOCK_CONFIGURATION]}
               resource={bucketName}
             >
@@ -500,8 +500,8 @@ const BucketSummary = ({
                   />
                 }
               />
-            </SecureComponent>
-            <Box className={classes.spacerTop}>
+            </SecureComponent> */}
+            {/* <Box className={classes.spacerTop}>
               <LabelValuePair
                 label={"Tags:"}
                 value={
@@ -511,7 +511,7 @@ const BucketSummary = ({
                   />
                 }
               />
-            </Box>
+            </Box> */}
           </Box>
 
           <Box
