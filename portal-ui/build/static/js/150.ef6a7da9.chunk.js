@@ -1,0 +1,2 @@
+(this["webpackJsonpportal-ui"]=this["webpackJsonpportal-ui"]||[]).push([[150],{961:function(e,t,c){"use strict";c.r(t);var i=c(2),n=c(396),o=c(815),a=c(39),r=c(0);t.default=function(e){var t=e.open,c=e.bucketName,s=e.object,l=e.onClosePreview;return Object(r.jsx)(i.Fragment,{children:Object(r.jsx)(n.a,{modalOpen:t,title:"Preview - ".concat(null===s||void 0===s?void 0:s.name),onClose:l,wideLimit:!1,titleIcon:Object(r.jsx)(a.Jb,{}),children:Object(r.jsx)(o.a,{bucketName:c,object:s})})})}}}]);
+//# sourceMappingURL=150.ef6a7da9.chunk.js.map
