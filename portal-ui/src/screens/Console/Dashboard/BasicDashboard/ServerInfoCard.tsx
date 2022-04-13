@@ -109,7 +109,7 @@ const ServerInfoCard = ({ classes, server, index }: ICardProps) => {
               Uptime: {server.uptime ? niceDays(server.uptime) : "N/A"}
             </span>
             <span className={classes.infoValue}>
-              <VersionIcon />
+              {/* <VersionIcon /> */}
               <strong>Version</strong> {server.version ? server.version : "N/A"}
             </span>
           </Grid>
