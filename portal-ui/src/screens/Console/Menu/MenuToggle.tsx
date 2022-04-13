@@ -67,7 +67,7 @@ const MenuToggle = ({ isOpen, isOperatorMode, onToggle }: MenuToggleProps) => {
         },
       }}
     >
-      {isOpen ? (
+      {/* {isOpen ? (
         <div className={`logo ${stateClsName}`}>
           {isOperatorMode ? <OperatorLogo /> : <ConsoleLogo />}
         </div>
@@ -77,7 +77,7 @@ const MenuToggle = ({ isOpen, isOperatorMode, onToggle }: MenuToggleProps) => {
             <VersionIcon />
           </Suspense>
         </div>
-      )}
+      )} */}
 
       <IconButton
         className={`${stateClsName}`}

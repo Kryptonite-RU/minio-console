@@ -80,7 +80,7 @@ const PageHeader = ({
           &nbsp;
         </Grid>
       </Box>
-      <Grid item xs={12} sm={12} md={6} className={classes.label}>
+      {/* <Grid item xs={12} sm={12} md={6} className={classes.label}>
         {!sidebarOpen && (
           <div className={classes.logo}>
             {operatorMode ? <OperatorLogo /> : <ConsoleLogo />}
@@ -89,7 +89,7 @@ const PageHeader = ({
         <Typography variant="h4" className={classes.labelStyle}>
           {label}
         </Typography>
-      </Grid>
+      </Grid> */}
       <Grid item xs={12} sm={12} md={6} className={classes.rightMenu}>
         {actions && actions}
         {managerObjects && managerObjects.length > 0 && (

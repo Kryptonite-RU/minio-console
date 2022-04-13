@@ -1,0 +1,43 @@
+#!connect jdbc:hive2://127.0.0.1:10000
+version: '2'
+services:
+  master:
+    image: chrislusf/seaweedfs # use a remote image
+    restart: always
+    ports:
+      - 9333:9333
+      - 19333:19333
+    command: "master -ip=master"
+  volume:
+    image: chrislusf/seaweedfs # use a remote image
+    restart: always
+    ports:
+      - 8080:8080
+      - 18080:18080
+      - 9325:9325
+    command: 'volume -mserver="master:9333" -port=8080  -metricsPort=9325'
+    depends_on:
+      - master
+  filer:
+    image: chrislusf/seaweedfs # use a remote image
+    restart: always
+    ports:
+      - 8888:8888
+      - 18888:18888
+      - 9326:9326
+    command: 'filer -master="master:9333"  -metricsPort=9326'
+    tty: true
+    stdin_open: true
+    depends_on:
+      - master
+      - volume
+  minio-gateway:
+    image: ghcr.io/kryptonite-ru/minio:0.0.2-kryptonite
+    environment:
+      MINIO_ROOT_USER: minio
+      MINIO_ROOT_PASSWORD: minio123
+    command: minio gateway weed --console-address :9093 filer:8888
+    ports:
+      - 9000:9000
+      - 9093:9093
+  
